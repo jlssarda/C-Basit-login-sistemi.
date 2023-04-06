@@ -5,25 +5,26 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "Turkish");
 	int sifre;
-	cout << "Þifre belirleyiniz." << endl;
+	cout << "Ãžifre belirleyiniz." << endl;
 	cin >> sifre;
-	cout << "Þifre belirlediniz." << endl;
+	cout << "Ãžifre belirlediniz." << endl;
 	this_thread::sleep_for(chrono::seconds(4));
 	system("cls");
 	while (true) {
 		int KullaniciSifreDenemesi;
-		cout << "Lütfen belirlediðin þifreyi giriniz." << endl;
+		cout << "LÃ¼tfen belirlediÃ°in Ã¾ifreyi giriniz." << endl;
 		cin >> KullaniciSifreDenemesi;
 		if (KullaniciSifreDenemesi == sifre) {
-			cout << "Þifreniz doðru. Giriþe yönlendiriliyorsunuz..." << endl;
+			cout << "Ãžifreniz doÃ°ru. GiriÃ¾e yÃ¶nlendiriliyorsunuz..." << endl;
 			this_thread::sleep_for(chrono::seconds(3));
 			break;
 		}
 		else {
-			cout << "Þifre yanlýþ. Tekrar deneyiniz." << endl;
+			cout << "Ãžifre yanlÃ½Ã¾. Tekrar deneyiniz." << endl;
 		}
 		this_thread::sleep_for(chrono::seconds(2));
 		system("cls");
 	}
 	return 0;
+	
 }
